@@ -1,0 +1,229 @@
+/* Général ------------------------------------------------------------------------------------- */
+
+body {
+	height:650px;
+	width:100%;
+	margin-top:auto;
+	position : fixed;
+	overflow:auto;
+	top:180px;
+	
+	background-image: url(naranjas.png);
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-size: 40%;
+	background-color: #F9CEBF; 
+}
+
+body, p, legend, label, input {
+	margin: 0.1em 0.8em 0.8em 0.8em;
+	padding: 0;
+	font: normal 10pt verdana, helvetica, sans-serif;
+	text-align: left;
+}
+
+.content {
+	position:relative;
+	z-index:1;
+	background-color:#ffffff; 
+	padding: 2em 2em 3em 2em;
+	border: 1px grey solid;
+	width:80%;
+	max-height:80%;
+	max-width: 1500px;
+	margin: auto;
+	margin-top:30px;	
+	text-align:center;
+	overflow-y:auto;
+	}
+
+fieldset {
+	position:relative;
+	z-index:1;	
+	width: 95%;
+	margin: 0;
+	padding: 1em;
+	text-align: left;	
+	background-color:#ffffff; 
+	border: 3px grey solid;
+	font-size: larger;
+	display:inline-block;
+}
+
+legend {
+	font-weight: bold;
+	font-family: papyrus;
+	font-size: 18px;
+	letter-spacing: .1rem;
+	-webkit-text-stroke: 1px silver;
+	color:silver;
+	text-shadow:
+		2px 2px 0 #000,
+		-1px -1px 0 #000,  
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+form label {
+	padding-top:.2em;
+	margin: 3px 0px 0px 0px;
+	font-size: larger;
+}
+
+form input {
+	margin-left:10px;
+	margin-bottom:.2em;
+	border: 1px #999 solid;
+	font-size: larger;
+}
+
+form input.sansLabel {
+	margin-left: 200px;
+	text-align: left;
+	font-size: larger;
+}
+
+select {
+	cursor:pointer;
+	font: normal 12pt verdana, helvetica, sans-serif;
+}
+
+option {
+	font: normal 12pt verdana, helvetica, sans-serif;
+}
+
+.old {
+	border : none;
+	color:orange;
+}
+
+.boutonAction {
+	cursor:pointer;
+	width: 30px; 
+	height: 30px; 
+	padding:0.1em;
+	opacity:0.6;
+}
+
+.boutonAction:hover {
+	opacity:1;
+	background-color: gold;
+}
+
+.bouton{
+  width:10em;
+  height:2.5em;
+  display: inline-block;
+  padding: 1px 5px;
+  cursor:pointer;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-image: linear-gradient(to bottom, #0DD3D0 0%,#038987);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 7px rgba(3,137,135,0.4);
+}
+
+.bouton:active{
+  box-shadow: 0 4px rgba(3,137,135,0.4);
+  transform: translateY(3px);
+}
+
+.bouton[disabled]{
+  color:silver;
+  background-image:none;
+  background-color: #038987;	
+}
+
+/* TABLE LISTE------------------------------------------------------------------- */
+
+.inscriptiontable{
+/*     border: 1px solid black; */
+/*     border-collapse: collapse; */
+	table-layout: fixed;
+	width: 680px;  
+}
+
+.inscriptiontable th, td {
+/*     border: 1px solid black; */
+	word-break: break-all;
+}
+
+.liste{
+	border-collapse: collapse; 
+	border: 2px #FC6E56 solid;
+	text-align:center;
+}
+
+.liste tr:hover{
+	background-color: rgba(249,206,191,0.6);
+}
+.liste th{
+	background: #F9CEBF;
+	border: 1px #FC6E56 solid;
+	font-weight:normal;
+}
+
+.liste td, .liste th{
+	border-collapse: collapse; 
+	border-top: 1px #FC6E56 solid;
+	border-bottom: 1px #FC6E56 solid;
+	border-left:1px #F9CEBF solid;
+	padding: 1px
+}
+
+/* SPAN ************************************ *****************************/
+
+.requis {
+	color: #c00;
+}
+
+.erreur {
+	color: #ff3333;
+}
+
+.succes {
+	color: #090;
+}
+
+.info {
+	font-style: italic;
+	color: rgb(193, 129, 21);
+}
+
+/* GESTION DE LA ROTATION DES IMAGES IMPORTEES *****************************/
+
+.rotate3 {
+    position: relative;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    transform: rotate(90deg) translateX(12%);
+}
+
+.rotate6 {
+    position: relative;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.rotate9 {
+    position: relative;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    transform: rotate(-90deg) translateX(-25%);
+}
+  
